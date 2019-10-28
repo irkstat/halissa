@@ -1,0 +1,455 @@
+@mixin color_yellow {
+   color: rgb(255, 182, 9);
+}
+@mixin bg_color_black {
+   background: rgb(35, 35, 35);
+}
+//ХЕДЕР====================================================
+.main_header{
+   width: 100%;
+   max-width: 2000px;
+   margin: 0 auto;
+   height: 100vh;
+   box-sizing: border-box;
+   .wrapper_menu{
+      height: 80px;
+      width: 100%;
+      @include bg_color_black();
+      box-sizing: border-box;
+      .top_menu{
+         max-width: 1200px;
+         height: 100%;
+         margin: 0 auto;
+         box-sizing: border-box;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0 20px;
+         .top_logo{
+            @include color_yellow();
+            font-family: 'Great Vibes', cursive;
+            font-size: 50px;
+            text-decoration: none;
+            &:hover{
+               color: rgb(255, 199, 70);
+               transition-duration: 0.3s;}}
+         .social{
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+            .fab{
+               font-size: 26px;
+               color: white;
+               &:hover{
+                  @include color_yellow();
+                  transition-duration: 0.4s;
+               }
+            }
+         }
+      }
+   }
+   .wrapper_lr{
+      width: 100%;
+      height: calc(100vh - 80px);
+      box-sizing: border-box;
+      display: flex;
+      .left_header{
+         width: 50%;
+         height: 100%;
+         background: url(/img/anton_halissa.webp) center no-repeat;
+         background-size: cover;}
+      .right_header{
+         width: 50%;
+         height: 100%;
+         background: url(/img/cake.webp) center no-repeat;
+         background-size: cover;
+         box-sizing: border-box;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         .box_description_anton{
+            width: 85%;
+            max-width: 800px;
+            margin-right: 50px;
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+            .txt_chef{
+               @include color_yellow();
+               font-size: 32px;
+               font-weight: 300;
+               margin: 0;
+               margin-right: 30%;}
+            .txt_name_chef{
+               font-size: 55px;
+               font-weight: bold;
+               color: white;
+               margin: 0;
+               margin-top: 10px;
+               span{
+                  @include color_yellow();}}
+            .strip_header{
+               width: 100px;
+               border: 2px solid rgb(172, 172, 172);
+               margin-top: 20px;}
+            .txt_description{
+               color: white;
+               font-style: italic;
+               line-height: 1.5;
+               margin-top: 20px;
+               font-family: 'Open Sans', sans-serif;}
+            .box_address{
+               width: 100%;
+               display: grid;
+               grid-template-columns: 60% 40%;
+               grid-template-rows: 50px 50px;
+               margin-top: 50px;
+               grid-gap: 10px;
+               a{
+                  color: white;
+                  text-decoration: none;
+                  align-self: center;
+                  &:hover{
+                     @include color_yellow();
+                     transition-duration: 0.3s;}
+                  i{
+                     margin-right: 10px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+//ГЛАВНЫЙ БЛОК=============================================
+.main{
+   width: 100%;
+   max-width: 2000px;
+   margin: 0 auto;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+.about_me{
+   padding: 100px 0;
+   .wrapper_txt_img_about{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin:  0 auto;
+      padding: 0 20px;
+      .txt_about{
+         width: 48%;
+         .h2_halissa{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 800;
+         }
+         .txt_me{
+            line-height: 1.5;
+            color: rgb(17, 17, 17);
+            font-size: 18px;
+            text-align: justify;
+         }
+         .box_signature{
+            display: flex;
+            .txt2_name_chef{
+               font-size: 28px;
+               font-weight: bold;
+            }
+            .img_signature{
+               width: 120px;
+               height: auto;
+            }
+         }
+      }
+      .img_about{
+         width: 47%;
+         display: flex;
+         align-items: center;
+         .box_img_about{
+            width: 100%;
+            height: 80%;
+            background: rgb(255, 182, 9);
+            .img_coffee{
+               width: 100%;
+               height: 100%;
+               background: url(/img/coffee.webp) center no-repeat;
+               background-size: cover;
+               transform: translate(-15px, -15px);
+            }
+         }
+      }
+   }
+}
+//СЕКЦИЯ ОБРАЗОВАНИЕ=======================================
+.education{
+   padding: 70px 0;
+   @include bg_color_black();
+   color: white;//удалить
+   display: grid;
+   grid-template-columns: 387px 387px 387px;
+   grid-template-rows: 1fr 1fr;
+   justify-content: center;
+   text-align: center;
+   .h3_education{
+      grid-column: 1/4;
+      justify-self: center;
+      align-self: center;
+      @include color_yellow();
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 800;
+   }
+   .box_institute{
+      .name_institute{
+         text-transform: uppercase;
+         font-weight: bold;
+         font-size: 14px;
+      }
+      .specialty{
+         font-size: 16px;
+         color: rgb(226, 173, 49);
+         font-style: italic;
+      }
+   }
+}
+//СЕКЦИЯ ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ===========================
+.experience{
+   padding: 70px 20px;
+   display: grid;
+   grid-template-columns: 549px 549px;
+   justify-content: center;
+   box-sizing: border-box;
+   grid-column-gap: 60px;
+   grid-row-gap: 30px;
+   .h2_halissa{
+      grid-column: 1/3;
+      text-transform: uppercase;
+      justify-self: center;
+      text-align: center;
+   }
+   .strip_experience{
+      grid-column: 1/3;
+      border: 0.5px solid gray;
+      width: 80%;
+      justify-self: center;
+   }
+   .box_experience{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      .name_rank{
+         @include color_yellow();
+         font-weight: bold;
+         font-size: 18px;
+      }
+      .name_restaurant{
+         font-weight: bold;
+         font-size: 18px;
+      }
+      li:not(:last-child){
+         margin-bottom: 20px;
+      }
+   }
+}
+//СЕКЦИЯ МОИ БЛЮДА=========================================
+.dish{
+   padding: 70px 0;
+   background: url(/img/bg_section_dish.webp) center no-repeat;
+   background-size: cover;
+   .h3_dish{
+      @include color_yellow();
+      text-transform: uppercase;
+      font-size: 24px;
+      text-align: center;
+   }
+   .box_my_dish{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      // border: 1px solid red;
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-auto-rows: 250px;
+      grid-gap: 20px;
+      .my_dish_1{
+         background: url(/img/breakfast_dish.webp) center no-repeat;
+         background-size: cover;
+         grid-column: 1/5;
+      }
+      .my_dish_2{
+         background: url(/img/coffee_dish.webp) center no-repeat;
+         background-size: cover;
+         grid-column: 5/8;
+      }
+      .my_dish_3{
+         background: url(/img/dinner_dish.webp) center no-repeat;
+         background-size: cover;
+         grid-column: 8/10;
+      }
+      .my_dish_4{
+         background: url(/img/fish_dish.webp) center no-repeat;
+         background-size: cover;
+         grid-row: 2;
+         grid-column: 1/3;
+      }
+      .my_dish_5{
+         background: url(/img/food_dish.webp) center no-repeat;
+         background-size: cover;
+         grid-row: 2;
+         grid-column: 3/6;
+      }
+      .my_dish_6{
+         background: url(/img/meal_dish.webp) center no-repeat;
+         background-size: cover;
+         grid-row: 2;
+         grid-column: 6/10;
+      }
+      .my_dish_7{
+         background: url(/img/meat_dish.webp) center no-repeat;
+         background-size: cover;
+         grid-row: 3;
+         grid-column: 1/5;
+      }
+      .my_dish_8{
+         background: url(/img/salmon_dish.webp) center no-repeat;
+         background-size: cover;
+         grid-row: 3;
+         grid-column: 5/8;
+      }
+      .my_dish_9{
+         background: url(/img/scrambled_dish.webp) center no-repeat;
+         background-size: cover;
+         grid-row: 3;
+         grid-column: 8/10;
+      }
+   }
+}
+//СЕКЦИЯ ДОСТИЖЕНИЯ========================================
+.achievements{
+   padding: 100px 0;
+   background: rgb(235, 235, 235);
+   .box_achievements{
+      max-width: 1200px;
+      padding: 0 20px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .skills{
+         .achievements_header{
+            font-weight: bold;
+            font-family: 'Cormorant Infant', serif;
+            font-size: 30px;
+            color: rgb(34, 34, 34);
+            margin-top: 0;
+         }
+         li:not(:last-child){
+            margin-bottom: 20px;
+         }
+      }
+   }
+}
+//СЕКЦИЯ ОБРАТНАЯ СВЯЗЬ====================================
+.contact{
+   padding: 70px 20px;
+   background: url(/img/bg_contact.webp) center no-repeat;
+   background-size: cover;
+   .contact_header{
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 30px;
+      @include color_yellow()
+   }
+   .box_form{
+      max-width: 700px;
+      margin: 0 auto;
+      // border: 1px solid red;
+      box-sizing: border-box;
+      .inp_form{
+         width: 100%;
+         box-sizing: border-box;
+         margin-bottom: 20px;
+         height: 40px;
+         border: 2px solid transparent;
+         &:hover{
+            border: 2px solid rgb(255, 182, 9);
+         }
+      }
+      textarea{
+         width: 100%;
+         box-sizing: border-box;
+         height: 150px;
+         margin-bottom: 20px;
+         border: 2px solid transparent;
+         &:hover{
+            border: 2px solid rgb(255, 182, 9);
+         }
+      }
+      .button_send{
+         width: 150px;
+         height: 45px;
+         display: block;
+         margin: 0 auto;
+         background: rgb(255, 182, 9);
+         border: 1px solid transparent;
+         color: white;
+         letter-spacing: 1px;
+         // text-transform: uppercase;
+         cursor: pointer;
+         &:hover{
+            background: white;
+            border: 2px solid rgb(255, 182, 9);
+            @include color_yellow();
+            transition-duration: 0.3s;
+         }
+      }
+   }
+}
+//ФУТЕР====================================================
+.main_footer{
+   padding: 50px 0;
+   background: rgb(37, 37, 37);
+   .box_footer{
+      max-width: 1200px;
+      padding: 0 20px;
+      margin: 0 auto;
+      // border: 1px solid red;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 50px 50px 50px;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      text-align: center;
+      a{
+         color: white;
+         text-decoration: none;
+         align-self: center;
+         justify-self: center;
+         &:hover{
+            @include color_yellow();
+            transition-duration: 0.4s;
+         }
+      }
+      .footer_social{
+         grid-row: 2;
+         grid-column: 1/4;
+         align-self: center;
+         justify-self: center;
+         font-size: 24px;
+         width: 130px;
+         // border: 1px solid fuchsia;
+         display: flex;
+         justify-content: space-between;
+         &:hover{
+            @include color_yellow();
+            transition-duration: 0.4s;
+         }
+      }
+      .copyright{
+         grid-column: 1/4;
+         align-self: center;
+         justify-self: center;
+      }
+   }
+}

@@ -1,0 +1,373 @@
+.main_header {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  height: 100vh;
+  box-sizing: border-box; }
+  .main_header .wrapper_menu {
+    height: 80px;
+    width: 100%;
+    background: #232323;
+    box-sizing: border-box; }
+    .main_header .wrapper_menu .top_menu {
+      max-width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px; }
+      .main_header .wrapper_menu .top_menu .top_logo {
+        color: #ffb609;
+        font-family: 'Great Vibes', cursive;
+        font-size: 50px;
+        text-decoration: none; }
+        .main_header .wrapper_menu .top_menu .top_logo:hover {
+          color: #ffc746;
+          transition-duration: 0.3s; }
+      .main_header .wrapper_menu .top_menu .social {
+        width: 150px;
+        display: flex;
+        justify-content: space-between; }
+        .main_header .wrapper_menu .top_menu .social .fab {
+          font-size: 26px;
+          color: white; }
+          .main_header .wrapper_menu .top_menu .social .fab:hover {
+            color: #ffb609;
+            transition-duration: 0.4s; }
+  .main_header .wrapper_lr {
+    width: 100%;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    display: flex; }
+    .main_header .wrapper_lr .left_header {
+      width: 50%;
+      height: 100%;
+      background: url(/img/anton_halissa.webp) center no-repeat;
+      background-size: cover; }
+    .main_header .wrapper_lr .right_header {
+      width: 50%;
+      height: 100%;
+      background: url(/img/cake.webp) center no-repeat;
+      background-size: cover;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .main_header .wrapper_lr .right_header .box_description_anton {
+        width: 85%;
+        max-width: 800px;
+        margin-right: 50px;
+        font-family: 'Montserrat', sans-serif;
+        box-sizing: border-box; }
+        .main_header .wrapper_lr .right_header .box_description_anton .txt_chef {
+          color: #ffb609;
+          font-size: 32px;
+          font-weight: 300;
+          margin: 0;
+          margin-right: 30%; }
+        .main_header .wrapper_lr .right_header .box_description_anton .txt_name_chef {
+          font-size: 55px;
+          font-weight: bold;
+          color: white;
+          margin: 0;
+          margin-top: 10px; }
+          .main_header .wrapper_lr .right_header .box_description_anton .txt_name_chef span {
+            color: #ffb609; }
+        .main_header .wrapper_lr .right_header .box_description_anton .strip_header {
+          width: 100px;
+          border: 2px solid #acacac;
+          margin-top: 20px; }
+        .main_header .wrapper_lr .right_header .box_description_anton .txt_description {
+          color: white;
+          font-style: italic;
+          line-height: 1.5;
+          margin-top: 20px;
+          font-family: 'Open Sans', sans-serif; }
+        .main_header .wrapper_lr .right_header .box_description_anton .box_address {
+          width: 100%;
+          display: grid;
+          grid-template-columns: 60% 40%;
+          grid-template-rows: 50px 50px;
+          margin-top: 50px;
+          grid-gap: 10px; }
+          .main_header .wrapper_lr .right_header .box_description_anton .box_address a {
+            color: white;
+            text-decoration: none;
+            align-self: center; }
+            .main_header .wrapper_lr .right_header .box_description_anton .box_address a:hover {
+              color: #ffb609;
+              transition-duration: 0.3s; }
+            .main_header .wrapper_lr .right_header .box_description_anton .box_address a i {
+              margin-right: 10px; }
+
+.main {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+
+.about_me {
+  padding: 100px 0; }
+  .about_me .wrapper_txt_img_about {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; }
+    .about_me .wrapper_txt_img_about .txt_about {
+      width: 48%; }
+      .about_me .wrapper_txt_img_about .txt_about .h2_halissa {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 800; }
+      .about_me .wrapper_txt_img_about .txt_about .txt_me {
+        line-height: 1.5;
+        color: #111111;
+        font-size: 18px;
+        text-align: justify; }
+      .about_me .wrapper_txt_img_about .txt_about .box_signature {
+        display: flex; }
+        .about_me .wrapper_txt_img_about .txt_about .box_signature .txt2_name_chef {
+          font-size: 28px;
+          font-weight: bold; }
+        .about_me .wrapper_txt_img_about .txt_about .box_signature .img_signature {
+          width: 120px;
+          height: auto; }
+    .about_me .wrapper_txt_img_about .img_about {
+      width: 47%;
+      display: flex;
+      align-items: center; }
+      .about_me .wrapper_txt_img_about .img_about .box_img_about {
+        width: 100%;
+        height: 80%;
+        background: #ffb609; }
+        .about_me .wrapper_txt_img_about .img_about .box_img_about .img_coffee {
+          width: 100%;
+          height: 100%;
+          background: url(/img/coffee.webp) center no-repeat;
+          background-size: cover;
+          transform: translate(-15px, -15px); }
+
+.education {
+  padding: 70px 0;
+  background: #232323;
+  color: white;
+  display: grid;
+  grid-template-columns: 387px 387px 387px;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  text-align: center; }
+  .education .h3_education {
+    grid-column: 1/4;
+    justify-self: center;
+    align-self: center;
+    color: #ffb609;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800; }
+  .education .box_institute .name_institute {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px; }
+  .education .box_institute .specialty {
+    font-size: 16px;
+    color: #e2ad31;
+    font-style: italic; }
+
+.experience {
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: 549px 549px;
+  justify-content: center;
+  box-sizing: border-box;
+  grid-column-gap: 60px;
+  grid-row-gap: 30px; }
+  .experience .h2_halissa {
+    grid-column: 1/3;
+    text-transform: uppercase;
+    justify-self: center;
+    text-align: center; }
+  .experience .strip_experience {
+    grid-column: 1/3;
+    border: 0.5px solid gray;
+    width: 80%;
+    justify-self: center; }
+  .experience .box_experience {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+    .experience .box_experience .name_rank {
+      color: #ffb609;
+      font-weight: bold;
+      font-size: 18px; }
+    .experience .box_experience .name_restaurant {
+      font-weight: bold;
+      font-size: 18px; }
+    .experience .box_experience li:not(:last-child) {
+      margin-bottom: 20px; }
+
+.dish {
+  padding: 70px 0;
+  background: url(/img/bg_section_dish.webp) center no-repeat;
+  background-size: cover; }
+  .dish .h3_dish {
+    color: #ffb609;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center; }
+  .dish .box_my_dish {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 250px;
+    grid-gap: 20px; }
+    .dish .box_my_dish .my_dish_1 {
+      background: url(/img/breakfast_dish.webp) center no-repeat;
+      background-size: cover;
+      grid-column: 1/5; }
+    .dish .box_my_dish .my_dish_2 {
+      background: url(/img/coffee_dish.webp) center no-repeat;
+      background-size: cover;
+      grid-column: 5/8; }
+    .dish .box_my_dish .my_dish_3 {
+      background: url(/img/dinner_dish.webp) center no-repeat;
+      background-size: cover;
+      grid-column: 8/10; }
+    .dish .box_my_dish .my_dish_4 {
+      background: url(/img/fish_dish.webp) center no-repeat;
+      background-size: cover;
+      grid-row: 2;
+      grid-column: 1/3; }
+    .dish .box_my_dish .my_dish_5 {
+      background: url(/img/food_dish.webp) center no-repeat;
+      background-size: cover;
+      grid-row: 2;
+      grid-column: 3/6; }
+    .dish .box_my_dish .my_dish_6 {
+      background: url(/img/meal_dish.webp) center no-repeat;
+      background-size: cover;
+      grid-row: 2;
+      grid-column: 6/10; }
+    .dish .box_my_dish .my_dish_7 {
+      background: url(/img/meat_dish.webp) center no-repeat;
+      background-size: cover;
+      grid-row: 3;
+      grid-column: 1/5; }
+    .dish .box_my_dish .my_dish_8 {
+      background: url(/img/salmon_dish.webp) center no-repeat;
+      background-size: cover;
+      grid-row: 3;
+      grid-column: 5/8; }
+    .dish .box_my_dish .my_dish_9 {
+      background: url(/img/scrambled_dish.webp) center no-repeat;
+      background-size: cover;
+      grid-row: 3;
+      grid-column: 8/10; }
+
+.achievements {
+  padding: 100px 0;
+  background: #ebebeb; }
+  .achievements .box_achievements {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .achievements .box_achievements .skills .achievements_header {
+      font-weight: bold;
+      font-family: 'Cormorant Infant', serif;
+      font-size: 30px;
+      color: #222222;
+      margin-top: 0; }
+    .achievements .box_achievements .skills li:not(:last-child) {
+      margin-bottom: 20px; }
+
+.contact {
+  padding: 70px 20px;
+  background: url(/img/bg_contact.webp) center no-repeat;
+  background-size: cover; }
+  .contact .contact_header {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffb609; }
+  .contact .box_form {
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    .contact .box_form .inp_form {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      height: 40px;
+      border: 2px solid transparent; }
+      .contact .box_form .inp_form:hover {
+        border: 2px solid #ffb609; }
+    .contact .box_form textarea {
+      width: 100%;
+      box-sizing: border-box;
+      height: 150px;
+      margin-bottom: 20px;
+      border: 2px solid transparent; }
+      .contact .box_form textarea:hover {
+        border: 2px solid #ffb609; }
+    .contact .box_form .button_send {
+      width: 150px;
+      height: 45px;
+      display: block;
+      margin: 0 auto;
+      background: #ffb609;
+      border: 1px solid transparent;
+      color: white;
+      letter-spacing: 1px;
+      cursor: pointer; }
+      .contact .box_form .button_send:hover {
+        background: white;
+        border: 2px solid #ffb609;
+        color: #ffb609;
+        transition-duration: 0.3s; }
+
+.main_footer {
+  padding: 50px 0;
+  background: #252525; }
+  .main_footer .box_footer {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center; }
+    .main_footer .box_footer a {
+      color: white;
+      text-decoration: none;
+      align-self: center;
+      justify-self: center; }
+      .main_footer .box_footer a:hover {
+        color: #ffb609;
+        transition-duration: 0.4s; }
+    .main_footer .box_footer .footer_social {
+      grid-row: 2;
+      grid-column: 1/4;
+      align-self: center;
+      justify-self: center;
+      font-size: 24px;
+      width: 130px;
+      display: flex;
+      justify-content: space-between; }
+      .main_footer .box_footer .footer_social:hover {
+        color: #ffb609;
+        transition-duration: 0.4s; }
+    .main_footer .box_footer .copyright {
+      grid-column: 1/4;
+      align-self: center;
+      justify-self: center; }
